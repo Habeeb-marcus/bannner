@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-cen {
+    align-items: center;
+}
+
+nav {
+    box-shadow: 1px 0 10px -5px #000;
+    transition: all 0.3s ease;
+}
+
+.nav-main {
+    padding: 0 1.1rem;
+    height: 70px;
+    width: 1200px;
+}
+
+.nav-list {
+    text-decoration: none;
+    list-style: none;
+    height: 100%;
+    /* position: relative; */
+
+}
+
+.nav-list:not(:last-child) {
+    margin-right: 1.1rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.nav-list:hover a,
+.nav-list:focus a {
+    color: #E31C25;
+    transition: .3s ease-in-out;
+}
+
+/* .menu .nav-list:focus-within .drop-down ,
+.menu .nav-list:hover .drop-down ,
+.menu .nav-list .drop-down :hover{
+    display: block;
+} */
+
+/* .nav-list */
+
+.menu {
+    width: 100%;
+    height: 100%;
+}
+
+.menu ul {
+    justify-content: flex-end;
+    height: 100%;
+}
+
+
+.menu ul li:hover>.submenu,
+.menu ul li:focus-within>.submenu,
+.menu ul li .submenu:hover {
+    display: block;
+}
+
+.cart,
+.search {
+    margin-left: 22px;
+    width: 50px;
+    position: relative;
+}
+
+.search {
+    margin-left: 5px;
+}
+
+.cart a,
+.search a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo img {
+    height: 3rem;
+}
+
+.cart-count {
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    background: #c61515;
+    color: #fff;
+    width: 15px;
+    height: 17px;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    left: 9px;
+}
+
+.fa-chevron-down {
+    color: grey;
+}
+
+.submenu {
+    background: whitesmoke;
+    position: absolute;
+    top: 70px;
+    transition: all .3s ease;
+    width: 180px;
+    display: none;
+}
+
+.submenu ul li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.submenu ul li:hover {
+    background: red;
+    color: #fff;
+}
+
+/* .drop-ul {
+    list-style: none;
+} */
+
+/* .drop-ul a {
+    text-decoration: none;
+} */
+/* .drop-li {
+    padding: 7px 15px;
+} */
+
+/* .drop-down {
+    position: absolute;
+    top: 72px;
+    width: 200px;
+    background: #f3efef;
+    display: none;
+    transition: all 0.5s ease;
+} */
+/* 
+.drop-down .drop-li:hover, 
+.drop-down .drop-li:focus a {
+    background: #c61515;
+    color: #fff;
+} */
+
+.bar {
+    background: #e31d26;
+    font-size: 20px;
+    padding: 12px 20px;
+    line-height: normal;
+    color: #fff;
+    display: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+       padding: 50px 0;
+       align-items: center;
+       max-width: 1140px !important;
+}
+
+.description h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.description p {
+    line-height: 30px;
+    font-weight: 400;
+    margin: 15px 0 5px 0;
+    font-size: 14px;
+    color: #878787;
+    text-shadow: none;
+}
+ 
+
+.description i {
+    color: green;
+}
+.description p span {
+    margin-right: 10px;
+}
+
+.home-section {
+    background-color: #f5f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email_newsletter {
+    width: 100%;
+    background: url(./envelope.png) no-repeat 15px 21px;
+    max-width: 350px;
+    background-color: #fff;
+    height:62px;
+    padding: 0 20px 0 45px;
+    border-radius: 5px 0 0 5px;
+    color: #454545;
+    font-size: 17px;
+    border: none;
+}
+
+form {
+    align-items: center;
+    display: flex;
+}
+
+
+#submit-btn {
+    width: 145px;
+    height: 62px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Nunito',sans-serif;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    border: none;
+    background: #e52f37;
+}
+
+@media (max-width:1200px) {
+    .nav-main {
+        padding: 0 2.1rem;
+    }
+
+    .container img {
+        width: 27rem;
+        margin-left: 2rem;
+    }
+    
+    .description {
+        width: 30rem;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .container img {
+        width: 20rem;
+    }
+
+     .description {
+         width: 23rem;
+     }
+
+    .menu {
+        display: none;
+        position: absolute;
+        background: #ebe7e7;
+        top: 71px;
+        width: 100%;
+        left: 0;
+        height: initial;
+
+    }
+
+    .show {
+        display: block;
+    }
+
+    .menu .list {
+        flex-direction: column;
+    }
+
+    .menu .list li {
+        width: 100%;
+        /* padding: 0 2rem; */
+        justify-content: space-between;
+        margin-right: auto;
+    }
+
+    .fa-chevron-down {
+        color: #000;
+        font-size: 14px;
+    }
+
+    .menu ul li a {
+        font-size: 17px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        padding: 20px 20px 16px;
+        align-items: center;
+        /* background: red; */
+        /* color: #fff; */
+    }
+
+    .nav-list:hover a,
+    .nav-list:focus a {
+        background: red;
+        color: #fff;
+    }
+
+
+    .menu ul li {
+        margin-right: auto;
+    }
+
+    .nav-main {
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 1rem;
+    }
+
+
+    .bar {
+        display: inline-block;
+    }
+
+
+    .nav-list {
+        /* margin-right: 1.1rem;
+        position: relative; */
+        flex-flow: inherit;
+        margin-right: auto;
+    }
+
+    .nav-list a {
+        margin-right: 0;
+    }
+
+    /* .drop-down {
+        position: inherit;
+    } */
+
+    .submenu {
+        width: inherit;
+        top: 61px;
+    }
+
+
+    .sub-li {
+        list-style: none;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+     .container {
+        flex-direction: column;
+     }
+
+      .container img {
+          width: 26rem;
+          margin-top: 3rem;
+      }
+
+       .description{
+           width: 80%;
+       }
+}
+
+
+@media (max-width: 500px) {
+
+    .cart,
+    .search {
+        display: none;
+    }
+
+    .logo img {
+        height: 2rem;
+    }
+
+     .container img {
+         width: 20rem;
+     }
+}
