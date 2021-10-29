@@ -251,6 +251,36 @@ form {
     background: #e52f37;
 }
 
+
+
+/* home section1 the second banner stylings starts from here*/
+.home-section1 {
+    background: url(./ban-img2.jpeg) center center no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home-section1::before {
+    content: '';
+    width: 100%;
+    background: #151515;
+    opacity: 0.55;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:1 ;
+}
+
+.container{
+    z-index: 2;
+    color: #fff;
+}
+
 @media (max-width:1200px) {
     .nav-main {
         padding: 0 2.1rem;
