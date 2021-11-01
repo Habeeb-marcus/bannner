@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +23,14 @@
 
 .align-cen {
     align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Nunito';
 }
 
 nav {
@@ -251,34 +259,93 @@ form {
     background: #e52f37;
 }
 
+/* section 2 */
+.service-section {
+    padding: 4rem
+}
+
+.service-title {
+    font-size: 40px;
+}
+.service-body {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;      
+    max-width: 74rem;
+}
+.service-cont {
+    text-align: center;
+}
+
+.service-cont span {
+    display: inline-block;
+    color: #c61515;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.service-box{
+    width: 24rem;
+    padding: 50px 32px;
+    box-shadow: 0px 5px 17px #eee;
+}
 
 
-/* home section1 the second banner stylings starts from here*/
-.home-section1 {
-    background: url(./ban-img2.jpeg) center center no-repeat;
-    height: 100vh;
+.service-box h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.service-main {
+    margin-top: 4rem;
+    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.learn-more {
+    color:#E31C25;
+    margin-top: 2rem;
+    display: inline-flex;
     position: relative;
+    /* padding: 7px 50px 7px 20px; */
+    /* transition: all 0.7s; */
 }
 
-.home-section1::before {
-    content: '';
-    width: 100%;
-    background: #151515;
-    opacity: 0.55;
-    position: absolute;
-    top: 0;
-    left: 0;
+.learn-more::before {
+    content: "\f138";
+    font-family: "Font Awesome 5 Free";
+    position: absolute; 
+    font-size: 30px;
+    font-weight: 900;
     right: 0;
-    bottom: 0;
-    z-index:1 ;
+    margin-right: 10px;
+    display: none;
 }
 
-.container{
-    z-index: 2;
-    color: #fff;
+.arr-hov {
+    display: none;
+}
+
+.learn-more i {
+    font-size: 29px;
+}
+
+.learn-more:hover{
+       background: #c61515;
+       color: #FFF;
+       padding: 7px 50px 7px 20px;
+       transition: padding 0.3s;
+}
+
+.learn-more:hover .arr {
+   display: none;
+   transition: none;
+}
+
+.learn-more:hover::before{
+    display: inline-flex;
+    margin-left: 10px;
 }
 
 @media (max-width:1200px) {
