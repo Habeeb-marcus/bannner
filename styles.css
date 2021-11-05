@@ -291,7 +291,10 @@ form {
     color: #c61515;
     font-weight: 700;
     margin-bottom: 12px;
+    background: url(./snappysoap.png);
+    background: url(./sunnyside.png);
 }
+
 
 .service-box {
    
