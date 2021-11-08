@@ -291,8 +291,8 @@ form {
     color: #c61515;
     font-weight: 700;
     margin-bottom: 12px;
-    background: url(./snappysoap.png);
-    background: url(./sunnyside.png);
+    /* background: url(./snappysoap.png);
+    background: url(./sunnyside.png); */
 }
 
 
@@ -509,7 +509,7 @@ form {
 }
 
 
-.review {
+.img-review {
     /* border: 3px dashed #000; */
     border-radius: 50%;
     padding: 0;
@@ -612,7 +612,6 @@ form {
     color: #223054;
     margin-bottom: 20px;
 }
-
 
 
 
