@@ -291,8 +291,8 @@ form {
     color: #c61515;
     font-weight: 700;
     margin-bottom: 12px;
-    background: url(./snappysoap.png);
-    background: url(./sunnyside.png);
+    /* background: url(./snappysoap.png);
+    background: url(./sunnyside.png); */
 }
 
 
@@ -571,6 +571,48 @@ form {
         top: 50%;
         transform: translateY(-50%);
 }
+
+/* portfolio section */
+.img-main img {
+    width: 24rem;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    /* width: 1200px; */
+    margin: 0 100px;
+}
+
+
+.porfolio-main {
+    justify-content: center;
+}
+
+.portfolio-text {
+  width: 600px;
+}
+
+.portfolio-text p {
+    margin-bottom: 1rem;
+}
+
+.portfolio-title span {
+    color: #0083FF;
+}
+
+.portfolio-title {
+    font-family: 'nunito', Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 150%;
+    color: #223054;
+    margin-bottom: 20px;
+}
+
 
 
 /* section pricing */
