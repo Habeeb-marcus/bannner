@@ -437,7 +437,7 @@ form {
 
 
 .review-cont {
-    padding: 64px;
+    padding: 64px 64px 128px;
 }
 
 .review-body  {
@@ -601,7 +601,7 @@ form {
 }
 
 .portfolio-text {
-  width: 600px;
+      width: 444px;
 }
 
 .portfolio-text a {
@@ -718,12 +718,14 @@ form {
 
 /* footer  */
 footer {
-
-    background: black;
+    background: #09122f;
     color: #fff;
     bottom: 0;
     width: 100vw;
-    padding: 90px 20px;
+    padding: 90px 90px 20px;
+    /* padding-bottom: 0; */
+     /*   padding-right: 80 px;
+        padding-left: 80 px; */
 }
 
 
