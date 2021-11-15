@@ -8,6 +8,13 @@ var path = new Array;
 path[0] = "./project1.png"
 path[1] = "./snappysoap.png"
 path[2] = "./sunnyside.png"
+path[1] = "./images/prj1.png"
+path[2] = "./images/prj2.png"
+path[3] = "./images/prj3.png"
+path[4] = "./images/prj4.png"
+path[5] = "./images/prj5.png"
+path[6] = "./images/prj6.png"
+path[7] = "./images/prj7.png"
 console.log(path.length);
 function swapImage()
 {
@@ -16,7 +23,7 @@ function swapImage()
        i++;
     } else { i = 0;}
 
-   setTimeout("swapImage()", 5000);
+   setTimeout("swapImage()", 2000);
 }
 
 

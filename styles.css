@@ -390,9 +390,69 @@ form {
 }
 
 
+.service-box:nth-child(1) .icon i,
+.service-box:nth-child(1) .icon .circle-box::after {
+    color: #e52f37;
+}
+
+.service-box:nth-child(2) .icon i,
+.service-box:nth-child(2) .icon .circle-box::after {
+    color: #290390;
+}
+
+.service-box:nth-child(3) .icon i {
+    color: #1fa299;
+}
+.service-box:nth-child(4) .icon i {
+    color: #9916B1;
+}
+.service-box:nth-child(5) .icon i {
+    color: #cb0680;
+}
+.service-box:nth-child(6) .icon i {
+    color: #2eb01c;
+}
+
+
+.service-box:nth-child(2) .icon {
+    background: #d8d1e8;
+}
+.service-box:nth-child(3) .icon {
+    background: #d6ebea;
+}
+.service-box:nth-child(4) .icon {
+    background: #f3e3f6;
+}
+.service-box:nth-child(5) .icon {
+    background: #f9e1f0;
+}
+.service-box:nth-child(6) .icon {
+    background: #e6f5e3;
+}
+
+.service-box:nth-child(1) .icon .circle-box::after {
+    background: #e52f37;
+}
+.service-box:nth-child(2) .icon .circle-box::after {
+    background: #3b2fe5;
+}
+.service-box:nth-child(3) .icon .circle-box::after {
+    background: #1fa299;
+}
+.service-box:nth-child(4) .icon .circle-box::after {
+    background: #9916B1;
+}
+.service-box:nth-child(5) .icon .circle-box::after {
+    background: #cb0680;
+}
+.service-box:nth-child(6) .icon .circle-box::after {
+    background: #2eb01c;
+}
+
+
 
  .circle-box {
-     background: #ffe9e3;
+     /* background: #ffe9e3; */
      position: absolute;
      top: 0;
      left: 0;
@@ -420,12 +480,12 @@ form {
 
 .circle-box::after {
    content: '';
-   width: 20px;
-   height: 20px;
+   width: 15px;
+   height: 15px;
    position: absolute;
    background: #e31c25;
    border-radius: 50%;
-   bottom: 13px;
+   bottom: 19px;
    right: 0;
    z-index: 5;
 }
@@ -1136,12 +1196,14 @@ i {
         .portfolio-img {
             height: 21.5rem;
             margin-bottom: 5rem;
+            width: 100%;
         }
 
         .img-main img {
-            width: 33rem;
-            height: 17.5rem;
+            /* width: 33rem; */
+            height: 18.5rem;
     }
+
     .portfolio-text {
         width: 98%;
         font-size: 1rem;
@@ -1161,3 +1223,4 @@ i {
         width: 23rem;
     }
 }
+    }
