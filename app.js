@@ -49,7 +49,6 @@ function swapImage()
 
 
 
-// console.log(data);
 
 
 const getData =  async() => {
