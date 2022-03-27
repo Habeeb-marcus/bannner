@@ -1,4 +1,25 @@
 // import data from './data.json'
+
+
+
+
+const bar = document.querySelector('.bar');
+// console.log(bar);
+
+
+const mobNav = () => {
+   const menu = document.querySelector('.menu');
+   // console.log('show mobile nav menu');
+   if(menu.classList.contains('mobMenu')) {
+   menu.classList.remove('mobMenu')
+   } else {
+      menu.classList.add('mobMenu')
+   }
+};
+
+
+
+
 const porfolioImg = document.querySelector('.img-main img');
 count = 0;
 
@@ -15,7 +36,7 @@ path[4] = "./images/prj4.png"
 path[5] = "./images/prj5.png"
 path[6] = "./images/prj6.png"
 path[7] = "./images/prj7.png"
-console.log(path.length);
+// console.log(path.length);
 function swapImage()
 {
    document.slide.src = path[i];
@@ -34,7 +55,7 @@ function swapImage()
 const getData =  async() => {
 const response = await fetch('./data.json');
 const data = await response.json()
-console.log(data);
+// console.log(data);
 return data;
 
 
@@ -47,18 +68,20 @@ getData()
 })
 .catch(err => ('rejected', err));
 
+bar.addEventListener('click', mobNav);
 
-const changeReview = () => {
-   const name = document.getElementById('name');
-   const job = document.getElementById('job');
-   const comment = document.getElementById('comment');
 
-   name.innerHTML = data[i];
-   if(i < path.length - 1) {
-       i++;
-    } else { i = 0;}
+// const changeReview = () => {
+//    const name = document.getElementById('name');
+//    const job = document.getElementById('job');
+//    const comment = document.getElementById('comment');
 
-   setTimeout("swapImage()", 5000);
-}
+//    name.innerHTML = data[i];
+//    if(i < path.length - 1) {
+//        i++;
+//     } else { i = 0;}
 
-window.onload=swapImage(), changeReview();
+//    setTimeout("swapImage()", 5000);
+// }
+
+// window.onload=swapImage(), changeReview();
